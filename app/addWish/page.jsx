@@ -1,9 +1,12 @@
 "use client";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { CiCirclePlus } from "react-icons/ci";
 import Link from "next/link";
 
 const Addwish = () => {
+  const [title, setTitle] = useState("");
+  const [desc, setDesc] = useState("");
+
   return (
     <div className="max-w-6xl h-screen bg-blue-50 hover:bg-blue-100 transition-all duration-300  rounded-xl flex flex-col items-center justify-start mx-auto pt-10 p-4">
       <form className="flex w-full max-w-xl flex-col gap-4 items-center justify-center">
@@ -15,6 +18,8 @@ const Addwish = () => {
             What do you wish for:
           </label>
           <input
+            onChange={(e) => setTitle(e.target.value)}
+            value={title}
             className="w-full h-10 rounded-lg p-2  focus:p-4 transition-all duration-200"
             placeholder="Become full-stack developer"
             type="text"
@@ -30,6 +35,8 @@ const Addwish = () => {
             Describe your wish:
           </label>
           <input
+            value={desc}
+            onChange={(e) => setDesc(e.target.value)}
             className="w-full h-24  rounded-lg p-2 focus:p-4 transition-all duration-200"
             placeholder="By practing everyday, and being consistent..."
             type="text"
