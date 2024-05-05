@@ -1,6 +1,6 @@
+"use client";
 import React from "react";
 import { CiCirclePlus } from "react-icons/ci";
-import Wish from "@/components/Wish";
 import Link from "next/link";
 
 const Addwish = () => {
@@ -15,8 +15,8 @@ const Addwish = () => {
             What do you wish for:
           </label>
           <input
-            className="w-full h-10 rounded-lg p-2 px-4"
-            placeholder="Become a full-stack developer"
+            className="w-full h-10 rounded-lg p-2  focus:p-4 transition-all duration-200"
+            placeholder="Become full-stack developer"
             type="text"
             name="wish"
             id="wish"
@@ -25,15 +25,15 @@ const Addwish = () => {
         <div className="w-full flex flex-col gap-1">
           <label
             className="text-lg font-semibold text-[#1014e7]"
-            htmlFor="wish"
+            htmlFor="desc"
           >
             Describe your wish:
           </label>
           <input
-            className="w-full h-24  rounded-lg p-2 px-4"
+            className="w-full h-24  rounded-lg p-2 focus:p-4 transition-all duration-200"
             placeholder="By practing everyday, and being consistent..."
             type="text"
-            name="wish"
+            name="desc"
             id="wish"
           />
         </div>

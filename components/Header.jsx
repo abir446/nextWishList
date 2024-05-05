@@ -6,7 +6,6 @@ const Header = () => {
       <h1 className="text-3xl text-center text-blue-700 font-bold pop">
         Your Dream Wishlist
       </h1>
-      
     </div>
   );
 };

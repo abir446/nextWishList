@@ -17,7 +17,7 @@ const Wish = () => {
           Adipisci, consequuntur.
         </p>
       </div>
-      <MdDelete className="text-2xl hover:text-3xl transition-all duration-100 text-[#5c5ff8] md:text-3xl md:hover:text-4xl  cursor-pointer " />
+      <MdDelete className="text-3xl transition-all duration-300 text-[#5c5ff8] md:text-3xl hover:text-4xl  hover:text-[#2f3091]  cursor-pointer " />
     </div>
   );
 };
